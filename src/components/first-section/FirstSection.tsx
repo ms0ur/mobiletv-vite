@@ -6,34 +6,26 @@ import {ZButton} from "../zbutton/ZButton.tsx";
 export function FirstSection() {
     return (
         <div className={styles.sectionMain}>
-            <div className={styles.navbar}>
-                <img className={styles.navbarLogo} src={logo} alt=""/>
+            <div className={styles.sectionMainLogo}>
+                <img src={logo} alt=""/>
             </div>
-            <div className={styles.contentContainer}>
-                <div className={styles.info}>
-                    <h1 className={styles.header}>Приложение «Звезда» для СМАРТ ТВ</h1>
-                    <div className={styles.infoSecondary}>
-                        <h2 className={styles.headerSecond}>Прямой эфир, видео, новости, программы и трансляции от «ЗВЕЗДЫ» прямо в вашем телевизоре!</h2>
-                        <p className={styles.description}>Приложение для умных телевизоров и приставок Android TV</p>
-                        <div className={styles.buttonContainer}>
-                            <ZButton text="Прочитать инструкцию" />
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.tvImage}>
-                    <div className={styles.gradientTop}></div>
-
-                    <div className={styles.gradientLeft}></div>
-
-                    <div className={styles.gradientBottom}></div>
-
-                    <img className={styles.tvImageImg} src="/public/tv-mocap.png" alt="Телевизор" />
-                </div>
-
+            <div className={styles.sectionMainInfo}>
+                <h2 className={styles.sectionMainInfoTitle}>
+                    Прямой эфир, программы, новости, документальные циклы и фильмы, стримы ведущих телеканала "ЗВЕЗДА" в вашем смартфоне
+                </h2>
+                <p>Приложение для смартфонов на базе операционной системы Android</p>
+                <ZButton text={"Прочитать инструкцию"} />
+            </div>
+            <div className={styles.tvImage}>
+                <img className={styles.tvImageImg} src="/tvzprograms_poster.png" alt=""/>
+                <div className={styles.gradientTop}></div>
+                <div className={styles.gradientLeft}></div>
+                <div className={styles.gradientBottom}></div>
             </div>
             <div className={styles.mouseContainer}>
                 <img src={mouse} alt=""/>
             </div>
         </div>
+
     );
 }
