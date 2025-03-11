@@ -38,7 +38,7 @@ export function SecondSection() {
                                     <img src={selected === 0 ? on : off} alt=""/>
                                 </div>
                                 <p className={styles.selectorItemText}>
-                                    Через браузер телевизора
+                                    RuStore
                                 </p>
                             </div>
                             <div className={styles.selectorItem} onClick={() => setSelected(1)}>
@@ -47,7 +47,7 @@ export function SecondSection() {
                                         <img src={selected === 0 ? off : on} alt=""/>
                                     </div>
                                     <p className={styles.selectorItemText}>
-                                        При помощи флешки (USB-накопителя)
+                                        Установить вручную
                                     </p>
                                 </div>
                             </div>

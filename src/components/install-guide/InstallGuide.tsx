@@ -11,7 +11,7 @@ export function InstallGuide({selected}: InstallGuideDesktopProps) {
         <div className={styles.installGuide}>
             <div className={styles.installGuideItem}>
                 <div className={styles.installGuideItemImage}>
-                    <img width='100%' src={selected === 0 ? "/install/tv/browser/installTVBrowser1.png" : "/install/tv/usb/installTVUSB1.png"} alt=""/>
+                    <img width='100%' src={selected === 0 ? "/install/ruStoreInstall1.png" : "/install/manualInstall1.png"} alt=""/>
                 </div>
                 <p className={styles.installGuideItemText1}>
                     {
@@ -20,16 +20,13 @@ export function InstallGuide({selected}: InstallGuideDesktopProps) {
                             "Скачайте с нашего сайта установочный APK файл и перенесите его на флешку"
                     }
                 </p>
-                <p className={styles.installGuideItemText2}>
-
-                </p>
                 <div className={styles.installGuideItemNumber}>
                     1
                 </div>
             </div>
             <div className={styles.installGuideItem}>
                 <div className={styles.installGuideItemImage}>
-                    <img width='100%' src={selected === 0 ? "/install/tv/browser/installTVBrowser2.png" : "/install/tv/usb/installTVUSB2.png"} alt=""/>
+                    <img width='100%' src={selected === 0 ? "/install/ruStoreInstall2.png" : "/install/manualInstall2.png"} alt=""/>
                 </div>
                 <p className={styles.installGuideItemText1}>
                     {selected === 0 ? (
@@ -56,7 +53,7 @@ export function InstallGuide({selected}: InstallGuideDesktopProps) {
             </div>
             <div className={styles.installGuideItem}>
                 <div className={styles.installGuideItemImage}>
-                    <img width='100%' src={selected === 0 ? "/install/tv/browser/installTVBrowser3.png" : "/install/tv/usb/installTVUSB3.png"} alt=""/>
+                    <img width='100%' src={selected === 0 ? "/install/ruStoreInstall3.png" : "/install/manualInstall3.png"} alt=""/>
                 </div>
                 <p className={styles.installGuideItemText1}>
                     {
@@ -65,20 +62,18 @@ export function InstallGuide({selected}: InstallGuideDesktopProps) {
                             "Вставьте флешку в ваш телевизор и откройте APK-файл при помощи установленного файлового менеджера"
                     }
                 </p>
-                <p className={styles.installGuideItemText2}>
-                    {
-                        selected === 0 ?
-                            "Если файл не открылся автоматически, найдите его в «Загрузках» браузера и откройте" :
-                            ""
-                    }
-                </p>
+                {selected === 0 && (
+                    <p className={styles.installGuideItemText2}>
+                        Если файл не открылся автоматически, найдите его в «Загрузках» браузера и откройте
+                    </p>
+                )}
                 <div className={styles.installGuideItemNumber}>
                     3
                 </div>
             </div>
             <div className={styles.installGuideItem}>
                 <div className={styles.installGuideItemImage}>
-                    <img width='100%' src={selected === 0 ? "/install/tv/browser/installTVBrowser4.png" : "/install/tv/usb/installTVUSB4.png"} alt=""/>
+                    <img width='100%' src={selected === 0 ? "/install/ruStoreInstall4.png" : "/install/manualInstall4.png"} alt=""/>
                 </div>
                 <p className={styles.installGuideItemText1}>
                     {
@@ -86,9 +81,6 @@ export function InstallGuide({selected}: InstallGuideDesktopProps) {
                             "Нажмите кнопку «Установить», а затем, после установки приложения, закройте браузер и откройте приложение «Звезда»" :
                             "Нажмите кнопку «Установить», а затем, после установки приложения, закройте файловый менеджер и откройте приложение «Звезда»"
                     }
-                </p>
-                <p className={styles.installGuideItemText2}>
-
                 </p>
                 <div className={styles.installGuideItemNumber}>
                     4
