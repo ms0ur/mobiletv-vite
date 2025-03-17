@@ -20,7 +20,7 @@ export function ThirdSection() {
     
     
     return(
-       <div className={styles.sectionMain}>
+       <div className={styles.sectionMain} id="thirdSection">
            <div className={styles.lineContainer}></div>
            <div className={styles.info}>
                <div className={styles.infoText}>
@@ -54,7 +54,7 @@ export function ThirdSection() {
            </div>
            <div className={styles.action}>
                <div className={styles.actionButton}>
-                   <ZButton text={"Мобильное приложение"}/>
+                   <ZButton text={"Приложение для СМАРТ ТВ"}/>
                </div>
                <footer className={styles.footer}>
                    © 2020 ОАО «ТРК ВС РФ «ЗВЕЗДА»
